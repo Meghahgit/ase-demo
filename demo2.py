@@ -1,14 +1,12 @@
-import sys
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
 
-if len(sys.argv) != 2:
-    print("Usage: python palindrome_check.py <word>")
-    sys.exit(1)
+# Hardcoded string to check
+word = "madam"
 
-word = sys.argv[1].lower().replace(" ", "")
-
-if word == word[::-1]:
-    print("Palindrome")
-    sys.exit(0)
+# Check and print result
+if is_palindrome(word):
+    print(f"'{word}' is a palindrome.")
 else:
-    print("Not a palindrome")
-    sys.exit(1)
+    print(f"'{word}' is not a palindrome.")
