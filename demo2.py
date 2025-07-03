@@ -3,10 +3,10 @@ def is_palindrome(s):
     return s == s[::-1]
 
 # Hardcoded string to check
-word = "sir"
+word = "madam"
 
 # Check and print result
-if is_palindrome(word):
+if is_palidrome(word):
     print(f"'{word}' is a palindrome.")
 else:
     print(f"'{word}' is not a palindrome.")
