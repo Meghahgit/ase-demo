@@ -3,7 +3,7 @@ def is_palindrome(s):
     return s == s[::-1]
 
 # Hardcoded string to check
-word = "mam"
+word = "hello"
 
 # Check and print result
 if is_palidrome(word):
